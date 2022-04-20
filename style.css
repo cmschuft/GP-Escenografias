@@ -36,6 +36,11 @@ body{
     color: #ffffff;
     text-transform: uppercase;
     text-decoration: none;
+    transition: all 1s;
+}
+
+.barraNavegacion__lista a:hover {
+    transform: scale(1.5);
 }
 
 .barraNavegacion__logo {
