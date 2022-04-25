@@ -5,334 +5,134 @@
 }
 
 body{
-    /* background-color: #65C1BE; */
-    background-image: linear-gradient(45deg, #38886d, #71d9dd, #066f8a);
+    background-color: #65C1BE;
 }
 
-.barraNavegacion {    
-    background-color: #3B506E;
-    position: fixed;
-    width: 100%;
-    height: 2rem;
+.barraNavegacion {
+    padding-right: 6%;
 }
 
-.barraNavegacion__lista {
-    display: flex;
-    flex-wrap: wrap;
-    font-family: Arial, Helvetica, sans-serif;
+.itemsBarra {
     letter-spacing: .2rem;
-    justify-content: space-evenly;
-    padding-left: 3rem;
-}
-
-.barraNavegacion__lista li {
-    display: flex;
-    list-style: none;
-    margin-top: 0.5rem;
-}
-
-.barraNavegacion__lista a {
-    display: flex;
-    color: #ffffff;
+    justify-content:space-around;
     text-transform: uppercase;
-    text-decoration: none;
-    transition: all 1s;
 }
 
-.barraNavegacion__lista a:hover {
-    transform: scale(1.5);
-}
-
-.barraNavegacion__logo {
-    position: absolute;
-    margin-left: 2rem;
-    width: 4rem;
-    height: 2rem;
-}
-
-h1 {
+.tituloPagina {
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #ECC1BE;
     color: #3B506E;
     text-transform: uppercase;
-    letter-spacing: .2rem;
-    padding: 3rem 0% 1% 0%;
-}
-
-.carrusel {
-    width: 30rem;
-    height: 50rem;
-    display: flex;
-    align-items: center;
-    margin: auto;
-    margin-top: 10rem;
-    background-image: url('./images/imagentest01.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    animation-name: carrusel;
-    animation-iteration-count: infinite;
-    animation-duration: 20s;    
-}
-
-@keyframes carrusel {
-    20% {
-        background-image: url('./images/imagentest02.png');        
-    }
-    40% {
-        background-image: url('./images/imagentest03.png');        
-    }
-    60% {
-        background-image: url('./images/imagentest04.png');        
-    }
-    80% {
-        background-image: url('./images/imagentest05.png');        
-    }
-}
-
-.imagen {
-    border-radius: 2rem;
-    display: flex;
-    width: 100%;
+    letter-spacing: 0.1rem;
+    padding-top: 5rem;
+    padding-bottom: 0.5rem;
+    margin: 0%;
 }
 
 .barraFooter {
-    background-color: #3B506E;
+    display: flex;
+    justify-content: center;
+    background-color: #6d95cc;
     position: fixed;
     width: 100%;    
     bottom: 0rem;
-    text-align: center;
+}
+
+.barraFooter a {
+    margin: 0% 2% 0% 2%;
 }
 
 .barraFooter img {
     opacity: 80%;
     height: 1.5rem;
     width: 1.5rem;
-    padding: 0% 2% 0% 2%;
-    margin-top: 0.3rem;
 }
 
 /* --------------------------------------PORTFOLIO-------------------------------------- */
 
-/* ---------- COMENTADO FLEXBOX ---------- */
-
-/* .showroom {
-    display: flex;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    flex-wrap: wrap;
-}
-
-.galeria__trabajos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-}
-
-.galeria__imagen {
-    width: 380px;
-    height: 270px;
-    margin: 10px;
-} */
-
-/* ---------- APLICANDO GRID ---------- */
-
-.showroom {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(380px, 270px));
-    margin-top: 2rem;
-    margin-bottom: 3rem;
-    gap: 3rem;
-}
-
-.galeria__trabajos {
-    text-align: center;
-}
-
-.galeria__imagen {
-    border-radius: 2rem;
-    width: 380px;
-    height: 270px;
-    margin: 10px;
+.cuadriculaTrabajos {
+    margin-top: 3%;
+    margin-bottom: 8%;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
 /* --------------------------------------SOBRE MI-------------------------------------- */
 
-.biografia {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    display: flex;    
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+.bio {
     margin-top: 3%;
-    margin-bottom: 3%;
+    margin-bottom: 8%;
+    margin-left: 3%;
+    margin-right: 3%;
 }    
 
-.lineaVertical {
-    border-left: 1px solid #3B506E;
-}
-
-.biografia__texto {
+.bio__texto {
     width: 25rem; 
     letter-spacing: .2rem;
     margin-bottom: 3rem;
     text-align: left;
 }
 
-.biografia__imagen {
-    border-radius: 2rem;
+.bio__imagen {
+    border-radius: 4rem;
     width: 30rem;
-    height: 40rem;
+    height: 35rem;
 }
 
 /* --------------------------------------SERVICIOS-------------------------------------- */
 
-.servicios {
-    display: flex;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    flex-wrap: wrap;
+.cuadriculaServicios {
     margin-top: 3%;
-    margin-bottom: 3%;
-}
-
-.servicios__trabajos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-}
-
-.servicios__imagen {
-    border-radius: 2rem;
-    width: 25rem;
-    height: 40rem;
-    margin: 10px;
+    margin-bottom: 8%;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
 /* --------------------------------------CONTACTO-------------------------------------- */
 
-.contacto {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    display: flex;    
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-top: 5%;
-    margin-bottom: 3%;
-}    
-
-.lineaVertical {
-    border-left: 1px solid #3B506E;
+.formMap {
+    margin-top: 3%;
+    margin-bottom: 8%;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
-.formulario {
-    text-align: left;
-}
-
-.iframe {
-    display: flex;    
-    flex-wrap: wrap;
-    width: 40%;
-    height: 20rem;
-    margin-left: 0%;
-}
 
 /* --------------------------------------MOBILE DESIGN-------------------------------------- */
+
+
 
 /* --------------------------------------INDEX-------------------------------------- */
 
 @media (max-width: 768px) {
 
     .barraNavegacion {    
-        height: 12rem;
         text-align: center;
     }
 
-    .barraNavegacion__lista {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 1rem;
-        padding-left: 0rem;
-    }
-    
-    .barraNavegacion__logo {
-        margin: 0%;
-        margin-top: 1rem;
-        position: static;
-    }
+/* --------------------------------------SOBRE MI-------------------------------------- */
 
-    h1 {
-        padding: 12rem 0% 1% 0%;
-    }
-    
-    .imagen {
-        padding: 1rem;
-        border-radius: 2rem;
-    }
-    .carrusel {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        overflow: hidden;        
-    }
-
-    /* --------------------------------------SOBRE MI-------------------------------------- */
-
-    .biografia {
-        justify-content: center;
-    }    
-    
-    .lineaVertical {
-        border-left: 1px solid #3b506e00;        
-    }
-    
-    .biografia__texto {
-        margin-top: 1rem;
+    .bio__texto {
         text-align: center;
     }
-    
-    .biografia__imagen {
-        margin: 2rem;
-    }
 
-    /* --------------------------------------SERVICIOS-------------------------------------- */
+/* --------------------------------------SERVICIOS-------------------------------------- */
 
     .servicios {
         margin-top: 5%;
         margin-bottom: 5%;
     }
 
-    .servicios__trabajos {
-        margin: auto;
-    }
-
-    .servicios__imagen {
-        width: 25rem;
-        height: 40rem;
-        margin-bottom: 3rem;
-    }
-
-    /* --------------------------------------CONTACTO-------------------------------------- */
+/* --------------------------------------CONTACTO-------------------------------------- */
 
     .contacto {
         justify-content: center;
     }    
 
-    .lineaVertical {
-        border-left: 1px solid #6e3b3b00;   
-    }
-
-    .formulario {
-        text-align: center;
-        margin-bottom: 3rem;
-    }
-
     .iframe {
         display: flex;    
-        flex-wrap: wrap;
-        width: 30em;
+        width: 100%;
         height: 25em;
     }
 }
