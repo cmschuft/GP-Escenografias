@@ -41,6 +41,7 @@ body{
     position: fixed;
     width: 100%;    
     bottom: 0rem;
+    z-index: 1;
 }
 
 .barraFooter a {
