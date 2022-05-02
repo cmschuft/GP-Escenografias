@@ -1,0 +1,19 @@
+.barraFooter {
+    display: flex;
+    justify-content: center;
+    background-color: #6d95cc;
+    position: fixed;
+    width: 100%;    
+    bottom: 0rem;
+    z-index: 1;
+
+    a {
+        margin: 0% 2% 0% 2%;
+    }
+
+    img {
+        opacity: 80%;
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+}

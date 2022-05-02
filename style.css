@@ -56,11 +56,8 @@ body{
 
 /* --------------------------------------PORTFOLIO-------------------------------------- */
 
-.cuadriculaTrabajos {
-    margin-top: 3%;
-    margin-bottom: 8%;
-    margin-left: 3%;
-    margin-right: 3%;
+.contenedor {
+    margin: 3% 8% 3% 3%;
 }
 
 .card-img-top:hover {
@@ -71,27 +68,24 @@ body{
 
 /* --------------------------------------SOBRE MI-------------------------------------- */
 
-.bio {
-    margin-top: 3%;
-    margin-bottom: 8%;
-    margin-left: 3%;
-    margin-right: 3%;
-}    
+.contenedor {
+    margin: 3% 8% 3% 3%;
+}   
 
-.bio__texto {
+.contenedor__texto {
     width: 25rem; 
     letter-spacing: .2rem;
     margin-bottom: 3rem;
     text-align: left;
 }
 
-.bio__imagen {
+.contenedor__texto__imagen {
     border-radius: 4rem;
     width: 30rem;
     height: 35rem;
 }
 
-.bio__imagen:hover {
+.contenedor__texto__imagen:hover {
     opacity: 0.5;
     transition: 1s;
     transition-timing-function: ease-out;
@@ -99,20 +93,14 @@ body{
 
 /* --------------------------------------SERVICIOS-------------------------------------- */
 
-.cuadriculaServicios {
-    margin-top: 3%;
-    margin-bottom: 8%;
-    margin-left: 3%;
-    margin-right: 3%;
+.contenedor {
+    margin: 3% 8% 3% 3%;
 }
 
 /* --------------------------------------CONTACTO-------------------------------------- */
 
-.formMap {
-    margin-top: 3%;
-    margin-bottom: 8%;
-    margin-left: 3%;
-    margin-right: 3%;
+.contenedor {
+    margin: 3% 8% 3% 3%;
 }
 
 
@@ -130,7 +118,7 @@ body{
 
 /* --------------------------------------SOBRE MI-------------------------------------- */
 
-    .bio__texto {
+    .contenedor__texto {
         text-align: center;
     }
 

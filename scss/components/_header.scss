@@ -1,0 +1,13 @@
+.barraNavegacion {
+    padding-right: 6%;
+}
+
+.itemsBarra {
+    letter-spacing: .2rem;
+    justify-content:space-around;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    background-color: $colorHovers;
+}

@@ -1,0 +1,83 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #65C1BE; }
+
+.barraNavegacion {
+  padding-right: 6%; }
+
+.itemsBarra {
+  letter-spacing: .2rem;
+  justify-content: space-around;
+  text-transform: uppercase; }
+
+.nav-link:hover {
+  background-color: #9bbef0; }
+
+.tituloPagina {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #ECC1BE;
+  color: #3B506E;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  padding-top: 5rem;
+  padding-bottom: 0.5rem;
+  margin: 0%; }
+
+/* --------------------------------------PORTFOLIO-------------------------------------- */
+.card-img-top:hover {
+  opacity: 0.5;
+  transition: 1s;
+  transition-timing-function: ease-out; }
+
+/* --------------------------------MÁRGENES GENERALES---------------------------------- */
+.contenedor {
+  margin: 3% 3% 8% 3%;
+  /* --------------------------------------SOBRE MI-------------------------------------- */ }
+  .contenedor__texto {
+    width: 25rem;
+    letter-spacing: .2rem;
+    margin-bottom: 3rem;
+    text-align: left; }
+    .contenedor__texto__imagen {
+      border-radius: 4rem;
+      width: 30rem;
+      height: 35rem; }
+      .contenedor__texto__imagen:hover {
+        opacity: 0.5;
+        transition: 1s;
+        transition-timing-function: ease-out; }
+
+.barraFooter {
+  display: flex;
+  justify-content: center;
+  background-color: #6d95cc;
+  position: fixed;
+  width: 100%;
+  bottom: 0rem;
+  z-index: 1; }
+  .barraFooter a {
+    margin: 0% 2% 0% 2%; }
+  .barraFooter img {
+    opacity: 80%;
+    height: 1.5rem;
+    width: 1.5rem; }
+
+@media (max-width: 768px) {
+  .barraNavegacion {
+    text-align: center; }
+  .contenedor__texto {
+    text-align: center; }
+  .servicios {
+    margin-top: 5%;
+    margin-bottom: 5%; }
+  .contacto {
+    justify-content: center; }
+  .iframe {
+    display: flex;
+    width: 100%;
+    height: 25em; } }
