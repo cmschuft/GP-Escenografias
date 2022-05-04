@@ -1,19 +1,40 @@
 .barraFooter {
-    display: flex;
-    justify-content: center;
     background-color: #6d95cc;
-    position: fixed;
-    width: 100%;    
-    bottom: 0rem;
-    z-index: 1;
+    text-align: center;
+    width: 100%;
+    padding-top: 1rem;    
 
+    &__titulo {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: x-large;                
+    }    
+            
+    &__subtitulo {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: large;
+
+    }
+    
+    &__copyright {
+        padding-top: 1rem;
+        margin-bottom: 0%;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: smaller;      
+    }
+    
     a {
         margin: 0% 2% 0% 2%;
     }
-
+    
     img {
         opacity: 80%;
         height: 1.5rem;
         width: 1.5rem;
+        transition: 1s;
+    }
+
+    img:hover {
+        transition: 0.5s;
+        transform: scale(175%);
     }
 }
