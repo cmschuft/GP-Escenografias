@@ -4,5 +4,33 @@
 }
 
 body{
-    background-color: $color-fondo;
+    background-color: map-get($colores , fondoSitio);
 }
+
+.error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__imagen {
+        border-radius: 15%;
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+    }
+    
+    &__boton {
+        background-color: map-get($colores, fondoTitulos);
+        border: none;
+        color: map-get($colores, letraTitulos);
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: inline-block;
+        font-size: 16px;
+        margin: 1rem;
+      }
+}
+
+

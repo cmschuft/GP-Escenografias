@@ -9,5 +9,5 @@
 }
 
 .nav-link:hover {
-    background-color: $colorHovers;
+    background-color: map-get($colores, hovers);
 }

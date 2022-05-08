@@ -1,5 +1,33 @@
-$color-fondo: #65C1BE;
 $tipografiaTitulos: Verdana, Geneva, Tahoma, sans-serif;
+
+/* $color-fondo: #65C1BE;
 $colorFondoTitulos: #ECC1BE;
 $colorLetrasTitulos: #3B506E;
-$colorHovers: #9bbef0;
+$colorHovers: #9bbef0; */
+
+/* MAP */
+
+$colores:(
+    fondoSitio: #65C1BE,
+    fondoTitulos: #ECC1BE,
+    letraTitulos: #3B506E,
+    hovers: #9bbef0
+);
+
+/* EXTEND */
+
+%textoTitulo {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+/* MIXING */
+
+@mixin bordes ($margen, $padtop, $padbot) {
+    margin: $margen;
+    padding-top: $padtop;
+    padding-bottom: $padbot;
+}
+
+
